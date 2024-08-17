@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Components\Pages\Order_Pages\OrderDetails.razor" />
     <Content Remove="wwwroot\js\notification.js" />
   </ItemGroup>
 
   <ItemGroup>
+    <_ContentIncludedByDefault Remove="Components\Pages\Order_Pages\OrderDetails.razor" />
     <_ContentIncludedByDefault Remove="wwwroot\js\notification.js" />
   </ItemGroup>
 
@@ -24,11 +26,16 @@
 
   <ItemGroup>
     <Folder Include="ViewModels\" />
-    <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\images\product\" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Components\Pages\Order_Pages\OrderDetails.razor" />
     <None Include="wwwroot\js\notification.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Components\Pages\Order_Pages\OrderDetails.razor" />
   </ItemGroup>
 
 </Project>
